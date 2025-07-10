@@ -41,7 +41,7 @@ public class CalculatorLv1 {
                     }
                     break;
                 default:
-                    System.out.println("적용하지 않은 연산 기호입니다.");
+                    System.out.println("적용할 수 없는 연산 기호입니다.");
                     valid = false;
                     break;
                 }
