@@ -45,9 +45,9 @@ public class Calculator {
             System.out.println("결과 : " + result);
         }
 
-            System.out.println("더 계산하시겠습니까? (Y/N)");
+            System.out.println("더 계산하시겠습니까? 종료는 'exit' 를 입력해주세요.");
             String next = scanner.next();
-            if (next.equalsIgnoreCase("N")) {
+            if (next.equalsIgnoreCase("exit")) {
                 System.out.println("계산기를 종료합니다.");
                 break;
             }
