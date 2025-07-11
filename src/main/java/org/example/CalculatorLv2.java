@@ -21,20 +21,25 @@ public class CalculatorLv2 {
             int num2 = scanner.nextInt();
 
             double result = cal.calculate(num1, num2, operations);
+            System.out.println("결과는 " + result + "입니다.");
 
             System.out.println("결과 저장 내용 : " + cal.getResults());
 
             System.out.println("저장된 결과를 삭제하시겠습니까? (Y/N)");
             String del = scanner.next();
-            if (del.equals("Y")) {
+            if (del.equalsIgnoreCase("Y")) {
                 cal.removeResults();
                 System.out.println("삭제 완료");
+                break;
             }
 
-            System.out.println("계속 계산하시겠습니까? exit를 입력하시면 종료됩니다.");
-            if (scanner.next().equals("exit")) {
+            System.out.println("더 계산하시겠습니까?\n계속하시려면 아무 키나 눌러주시고\n종료는 'exit' 를 입력해주세요.");
+            String next = scanner.next();
+            if (next.equalsIgnoreCase("exit")) {
+                System.out.println("계산기를 종료합니다.");
                 break;
             }
         }
+    scanner.close();
     }
 }
