@@ -39,11 +39,6 @@ public class CalculatorLv2Sub {
         return new ArrayList<>(results);
     }
 
-    public void setResults(ArrayList<Double> newResults) {
-        results.clear();
-        results.addAll(newResults);
-    }
-
     public void removeResults() {
         if (!results.isEmpty()) {
             results.remove(0);
