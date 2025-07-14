@@ -23,7 +23,7 @@ public class CalculatorLv2Sub {
                 if (num2 == 0) {
                     System.out.println("나눗셈에서 분모에 0은 입력할 수 없습니다.");
                 } else {
-                    result = (double) num1 / num2;
+                    result = num1 / num2;
                 }
                 break;
             default:
@@ -37,11 +37,6 @@ public class CalculatorLv2Sub {
 
     public ArrayList<Double> getResults() {
         return new ArrayList<>(results);
-    }
-
-    public void setResults(ArrayList<Double> newResults) {
-        results.clear();
-        results.addAll(newResults);
     }
 
     public void removeResults() {
