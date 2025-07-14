@@ -59,5 +59,4 @@ public class CalculatorLv1 {
         }
     scanner.close();
     }
-
 }
