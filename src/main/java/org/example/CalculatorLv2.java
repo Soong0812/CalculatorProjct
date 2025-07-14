@@ -30,7 +30,6 @@ public class CalculatorLv2 {
             if (del.equalsIgnoreCase("Y")) {
                 cal.removeResults();
                 System.out.println("삭제 완료");
-                break;
             }
 
             System.out.println("더 계산하시겠습니까?\n계속하시려면 아무 키나 눌러주시고\n종료는 'exit' 를 입력해주세요.");

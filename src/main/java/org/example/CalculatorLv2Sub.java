@@ -1,10 +1,10 @@
 package org.example;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class CalculatorLv2Sub {
 
-    private final LinkedList<Double> results = new LinkedList<>();
+    private final ArrayList<Double> results = new ArrayList<>();
 
     public double calculate(int num1, int num2, char operations) {
         double result = 0;
@@ -35,18 +35,18 @@ public class CalculatorLv2Sub {
         return result;
     }
 
-    public LinkedList<Double> getResults() {
-        return new LinkedList<>(results);
+    public ArrayList<Double> getResults() {
+        return new ArrayList<>(results);
     }
 
-    public void setResults(LinkedList<Double> newResults) {
+    public void setResults(ArrayList<Double> newResults) {
         results.clear();
         results.addAll(newResults);
     }
 
     public void removeResults() {
         if (!results.isEmpty()) {
-            results.removeFirst();
+            results.remove(0);
         }
     }
 }
