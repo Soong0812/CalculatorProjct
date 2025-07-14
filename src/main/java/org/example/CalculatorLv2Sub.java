@@ -6,7 +6,7 @@ public class CalculatorLv2Sub {
 
     private final ArrayList<Double> results = new ArrayList<>();
 
-    public double calculate(int num1, int num2, char operations) {
+    public double calculate(double num1, double num2, char operations) {
         double result = 0;
 
         switch (operations) {
